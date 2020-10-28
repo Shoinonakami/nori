@@ -1,0 +1,712 @@
+body{
+    background-color: #7eb2f5;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', 'Lato', 'Noto Sans JP', '游ゴシック', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 'Meiryo', 'MS Pゴシック', sans-serif;
+    color: #333;
+    font-size: 16px;
+}
+
+/*                        main                     */
+main > h1{
+    font-size: 60px;
+    text-align: center;
+    color: rgb(255, 255, 235);
+    text-decoration: underline solid rgb(255, 255, 235);
+    position: fixed;
+    top: 125px;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.video{
+    position:relative;
+    width:100%;
+    padding-top:56.25%;
+}
+.video iframe{
+    position:absolute;
+    top:0;
+    right:0;
+    width:100%;
+    height:100%;
+}
+/*                  intro-invibi                    */
+a.invibi{
+    display: block;
+    padding-top: 70px;
+    margin-top: -70px;
+}
+.intro-invibi-pea{
+    background-color: rgb(255, 255, 235);
+    margin-top: 200px;
+}
+.intro-invibi{
+    padding: 20px 30px;
+}
+.intro-invibi .center{
+    text-align: center;
+}
+.intro-invibi .center h2{
+    font-size: 60px;
+    border-bottom: 10px double #7eb2f5;
+}
+.intro-invibi ol{
+    padding: 20px;
+    line-height: 1.8;
+}
+/*               contents-invibi             */
+.contents-invibi{
+    padding: 20px 30px;
+    background-color: rgb(255, 255, 235);
+}
+.contents-invibi-backcolor .center{
+    text-align: center;
+}
+.contents-invibi-backcolor .center > h2{
+    font-size: 50px;
+    display: inline-block;
+    border-bottom: solid #7eb2f5;
+}
+.care-invibi{
+    border: 2px solid #7eb2f5;
+    padding: 15px;
+    margin: 20px 0;
+}
+.care-invibi ul{
+    padding: 10px 0 0 40px;
+    line-height: 1.8;
+}
+.care-invibi p{
+    line-height: 1.8;
+}
+.training-invibi{
+    border: 2px solid #7eb2f5;
+    padding: 15px;
+    margin: 20px 0;
+}
+.training-invibi > ul{
+    padding: 10px 0 0 20px;
+    list-style: none;
+}
+.training-invibi ul li{
+    position: relative;
+}
+.training-invibi ul li::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: .5em;
+    left: -1em;
+    width: 8px;
+    height: 3px;
+    border-left: 2px solid #333;
+    border-bottom: 2px solid #333;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.contents-desc-invibi ul{
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    padding: 0;
+}
+.contents-desc-invibi > ul li{
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+
+/*                  price-invibi                   */
+.price-invibi-pea{
+    background-color: rgb(255, 255, 235);
+}
+.price-invibi{
+    padding: 20px 30px;
+}
+.price-invibi .center{
+    text-align: center;
+}
+.price-invibi .center > h2{
+    font-size: 50px;
+    display: inline-block;
+    border-bottom: solid #7eb2f5;
+}
+.details-price-invibi ul{
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    line-height: 1.8;
+}
+.details-price-invibi ol{
+    list-style: none;
+    padding: 0;
+}
+.details-price-invibi ol li{
+    position: relative;
+    padding-left: 10px;
+}
+.details-price-invibi ol li:before {
+    content: "";
+    position: absolute;
+    top: .35em;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #333;
+}
+.details-price-invibi h3{
+    font-size: 25px;
+    padding: 0.4em 0.5em;
+    color: #333;
+    background: #f4f4f4;
+    border-left: solid 5px #7eb2f5;
+    border-bottom: solid 3px #d7d7d7;
+    margin:50px 0 10px;
+}
+.price-invibi h4{
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    background: #dfefff;
+    box-shadow: 0px 0px 0px 5px #dfefff;
+    border: dashed 2px white;
+    padding: 0.2em 0.5em;
+    color: #454545;
+    margin: 30px 0 10px;
+    display: inline-block;
+}
+.price-invibi h4:after {
+    position: absolute;
+    content: '';
+    left: -7px;
+    top: -7px;
+    border-width: 0 0 15px 15px;
+    border-style: solid;
+    border-color: #fff #fff #a8d4ff;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+.price-invibi-desc{
+    font-size: 14px;
+    margin: 100px 0 30px;
+    line-height: 1.8;
+}
+.price-invibi-desc ul{
+    list-style: none;
+    padding: 0;
+}
+.price-invibi-desc ul li{
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+
+.invibi-back-img{
+    height: calc(100vh - 80px);
+}
+.invibi-back-imgActive::before{
+    content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100vh;
+    background:url("../img/timeline_20200612_225800.jpg") no-repeat;
+    background-position: 63% center;
+    background-size:cover;
+}
+
+
+
+/*                  intro-team                    */
+a.team{
+    display: block;
+    padding-top: 70px;
+    margin-top: -70px;
+}
+.intro-team-pea{
+    background-color: rgb(255, 255, 235);
+}
+.intro-team{
+    padding: 20px 30px;
+}
+.intro-team .center{
+    text-align: center;
+}
+.intro-team .center h2{
+    font-size: 60px;
+    border-bottom: 10px double #7eb2f5;
+}
+.intro-team ol{
+    padding: 20px;
+    line-height: 1.8;
+}
+/*               contents-team             */
+.contents-team{
+    padding: 20px 30px;
+    background-color: rgb(255, 255, 235);
+}
+.contents-team-backcolor .center{
+    text-align: center;
+}
+.contents-team-backcolor .center > h2{
+    font-size: 50px;
+    display: inline-block;
+    border-bottom: solid #7eb2f5;
+}
+.care-team{
+    border: 2px solid #7eb2f5;
+    padding: 15px;
+    margin: 20px 0;
+}
+.care-team ul{
+    padding: 10px 0 0 40px;
+    line-height: 1.8;
+}
+.care-team p{
+    line-height: 1.8;
+}
+.training-team{
+    border: 2px solid #7eb2f5;
+    padding: 15px;
+    margin: 20px 0;
+}
+.training-team > ul{
+    padding: 10px 0 0 20px;
+    list-style: none;
+}
+.training-team ul li{
+    position: relative;
+}
+.training-team ul li::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: .5em;
+    left: -1em;
+    width: 8px;
+    height: 3px;
+    border-left: 2px solid #333;
+    border-bottom: 2px solid #333;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.contents-desc-team ul{
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    padding: 0;
+}
+.contents-desc-team > ul li{
+    padding-left: 1em;
+    text-indent: -1em;
+}
+.nutrition-team ul{
+    list-style: none;
+    padding: 10px 0 0 20px;
+}
+.nutrition-team{
+    border: 2px solid #7eb2f5;
+    padding: 15px;
+    margin: 20px 0;
+}
+.nutrition-team ul,p{
+    line-height: 1.8;
+}
+/*                  price-team                   */
+.price-team-pea{
+    background-color: rgb(255, 255, 235);
+}
+.price-team{
+    padding: 20px 30px;
+}
+
+.price-team .center{
+    text-align: center;
+}
+.price-team .center > h2{
+    font-size: 50px;
+    display: inline-block;
+    border-bottom: solid #7eb2f5;
+}
+.details-price-team ul{
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    line-height: 1.8;
+}
+.price-team-desc{
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+.price-team-desc ul{
+    list-style: none;
+    padding: 0;
+}
+.price-team-desc ul li{
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+
+.team-back-img{
+    height: calc(100vh - 80px);
+}
+.team-back-imgActive::before{
+    content:"";
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    width:100%;
+    height:100vh;
+    background:url("../img/timeline_20200612_225915.jpg") no-repeat;
+    background-position: 28% center;
+    background-size:cover;
+}
+
+
+/*                  intro-group                    */
+a.group{
+    display: block;
+    padding-top: 70px;
+    margin-top: -70px;
+}
+.intro-group-pea{
+    background-color: rgb(255, 255, 235);
+}
+.intro-group{
+    padding: 20px 30px;
+}
+.intro-group .center{
+    text-align: center;
+}
+.intro-group .center h2{
+    font-size: 60px;
+    border-bottom: 10px double #7eb2f5;
+}
+.intro-group ol{
+    padding: 20px;
+    line-height: 1.8;
+}
+/*               contents-group             */
+.contents-group{
+    padding: 20px 30px;
+    background-color: rgb(255, 255, 235);
+}
+.contents-group-backcolor .center{
+    text-align: center;
+}
+.contents-group-backcolor .center > h2{
+    font-size: 50px;
+    display: inline-block;
+    border-bottom: solid #7eb2f5;
+}
+.care-group{
+    border: 2px solid #7eb2f5;
+    padding: 15px;
+    margin: 20px 0;
+}
+.care-group ul{
+    padding: 10px 0 0 40px;
+    line-height: 1.8;
+}
+.care-group p{
+    line-height: 1.8;
+}
+.training-group{
+    border: 2px solid #7eb2f5;
+    padding: 15px;
+    margin: 20px 0;
+}
+.training-group > ul{
+    padding: 10px 0 0 20px;
+    list-style: none;
+    line-height: 1.8;
+}
+.training-group ul li{
+    position: relative;
+}
+.training-group ul li::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: .5em;
+    left: -1em;
+    width: 8px;
+    height: 3px;
+    border-left: 2px solid #333;
+    border-bottom: 2px solid #333;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.contents-desc-group ul{
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    padding: 0;
+}
+.contents-desc-group > ul li{
+    padding-left: 1em;
+    text-indent: -1em;
+}
+.nutrition-group ul{
+    list-style: none;
+    padding: 10px 0 0 20px;
+    line-height: 1.8;
+}
+.nutrition-group{
+    border: 2px solid #7eb2f5;
+    padding: 15px;
+    margin: 20px 0;
+}
+.nutrition-group p{
+    line-height: 1.8;
+}
+/*                  price-group                   */
+.price-group-pea{
+    background-color: rgb(255, 255, 235);
+}
+.price-group{
+    padding: 20px 30px;
+}
+.price-group .center{
+    text-align: center;
+}
+.price-group .center > h2{
+    font-size: 50px;
+    display: inline-block;
+    border-bottom: solid #7eb2f5;
+}
+.details-price-group ul{
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    line-height: 1.8;
+}
+.price-group-desc{
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+.price-group-desc ul{
+    list-style: none;
+    padding: 0;
+}
+.price-group-desc ul li{
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+
+
+
+@media(min-width: 730px){
+    main ul{
+        font-size: 18px;
+    }
+    main > h1{
+        font-size: 80px;
+    }
+
+    /*                  intro-invibi                     */
+    .intro-invibi{
+        padding: 30px 0;
+        width: 730px;
+        margin: 0 auto;
+    }
+    .intro-invibi ol li{
+        font-size: 18px;
+    }
+    
+
+    /*                 contents-invibi                       */
+    .contents-invibi{
+        padding: 30px 0;
+    }
+    .contents-invibi-backcolor{
+        width: 730px;
+        margin: 0 auto;
+    }
+    .contents-invibi-backcolor .center > h2{
+        font-size: 60px;
+    }
+    .picup-invibi{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0;
+    }
+    .care-invibi{
+        width: 320px;
+    }
+    .care-invibi p{
+        font-size: 16px;
+    }
+    .training-invibi{
+        width: 320px;
+    }
+    .training-invibi ul{
+        font-size: 16px;
+    }
+    .contents-desc-invibi ul{
+        font-size: 15px;
+    }
+    /*                   price-invibi                          */
+    .price-invibi{
+        padding: 30px 0 100px;
+        width: 730px;
+        margin: 0 auto;
+    }
+    .price-invibi .center > h2{
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+    .price-invibi-desc ul{
+        font-size: 15px;
+    }
+
+
+
+
+
+    /*                  intro-team                     */
+    .intro-team{
+        padding: 100px 0 0;
+        width: 730px;
+        margin: 0 auto;
+    }
+    .intro-team ol li{
+        line-height: 1.8;
+        font-size: 18px;
+    }
+    .intro-team .center h2{
+        margin-bottom: 30px;
+    }
+    /*                 contents-team                       */
+    .contents-team{
+        padding: 30px 0;
+    }
+    .contents-team-backcolor{
+        width: 730px;
+        margin: 0 auto;
+    }
+    .contents-team-backcolor .center > h2{
+        font-size: 60px;
+    }
+    .picup-team{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0 0;
+    }
+    .care-team{
+        width: 320px;
+    }
+    .care-team p{
+        font-size: 16px;
+    }
+    .training-team{
+        width: 320px;
+    }
+    .training-team ul{
+        font-size: 16px;
+    }
+    .nutrition-team{
+        margin: 0 auto;
+        width: 350px;
+        margin-bottom: 30px;
+    }
+    .contents-desc-team ul{
+        font-size: 15px;
+    }
+    /*                   price-team                          */
+    .price-team{
+        padding: 30px 0 100px;
+        width: 730px;
+        margin: 0 auto;
+    }
+    .price-team .center > h2{
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+    .price-team-desc ul{
+        font-size: 15px;
+    }
+
+
+
+
+
+
+    /*                  intro-group                     */
+    .intro-group{
+        padding: 100px 0 0;
+        width: 730px;
+        margin: 0 auto;
+    }
+    .intro-group ol li{
+        font-size: 18px;
+    }
+    .intro-group .center h2{
+        margin-bottom: 30px;
+    }
+    /*                 contents-group                       */
+    .contents-group{
+        padding: 30px 0;
+    }
+    .contents-group-backcolor{
+        width: 730px;
+        margin: 0 auto;
+    }
+    .contents-group-backcolor .center > h2{
+        font-size: 60px;
+    }
+    .picup-group{
+        display: flex;
+        justify-content: space-between;
+        /* align-items: baseline; */
+        margin: 30px 0 0;
+    }
+    .care-group{
+        width: 320px;
+    }
+    .care-group p{
+        font-size: 16px;
+    }
+    .training-group{
+        width: 320px;
+    }
+    .training-group ul{
+        font-size: 16px;
+    }
+    .nutrition-group{
+        margin: 0 auto;
+        width: 350px;
+        margin-bottom: 30px;
+    }
+    .contents-desc-group ul{
+        font-size: 15px;
+    }
+    /*                   price-group                          */
+    .price-group{
+        padding: 30px 0 100px;
+        width: 730px;
+        margin: 0 auto;
+    }
+    .price-group .center > h2{
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+    .price-group-desc ul{
+        font-size: 15px;
+    }
+}

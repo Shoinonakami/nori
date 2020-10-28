@@ -1,0 +1,223 @@
+body{
+    background-color: #7eb2f5;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', 'Lato', 'Noto Sans JP', '游ゴシック', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 'Meiryo', 'MS Pゴシック', sans-serif;
+    color: #333;
+    font-size: 16px;
+}
+
+
+/*                     main                        */
+main > h1{
+    font-size: 60px;
+    text-align: center;
+    color:rgb(255, 255, 235);
+    text-decoration: underline solid rgb(255, 255, 235);
+    position: fixed;
+    top: 125px;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+/*                  intro                        */
+.intro-pea{
+    background-color: rgb(255, 255, 235);
+    margin-top: 200px;
+    z-index: 0;
+}
+.intro-first{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px 0;
+    text-align: center;
+}
+.intro-first .big{
+    font-size: 38px;
+    font-weight: bold;
+}
+.intro-first .big::after {
+    content: "\A" ;
+    white-space: pre;
+}
+.intro-first .small{
+    font-size: 30px;
+    font-weight: bold;
+}
+.intro{
+    padding: 10px 30px;
+}
+.intro-pic img{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+.intro-desc{
+    margin: 0 auto;
+}
+.intro-desc ul{
+    padding: 10px 0 20px 20px;
+    list-style-type: square;
+    line-height: 1.8;
+}
+
+/*                      qualification                    */
+.qualification-pea{
+    background-color: rgb(255, 255, 235);
+    margin-top: 200px;
+}
+.qualification{
+    padding: 20px 30px;
+}
+.qualification-desc .center{
+    text-align: center;
+}
+.qualification-desc .center > h2{
+    font-size: 50px;
+    border-bottom: 10px double #7eb2f5;
+    display: inline-block;
+    font-weight: bold;
+}
+.qualification-flex ul{
+    padding: 20px 0 30px 20px;
+    line-height: 1.8;
+}
+.qualification-pic img{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*                    career                        */
+.career-pea{
+    margin-top:200px;
+    background-color: rgb(255, 255, 235);
+    padding-bottom: 80px;
+}
+.career{
+    padding: 20px 30px;
+}
+.career .center{
+    text-align: center;
+}
+.career-title{
+    font-size: 50px;
+    border-bottom: 10px double #7eb2f5;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.event ul{
+    padding: 20px 0 50px 20px;
+    list-style: square;
+    line-height: 1.8;
+}
+.career-img{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+}
+.career-img1 img{
+    display: block;
+    width: 100%
+    
+}
+.career-img2 img{
+    display: block;
+    width: calc(100% - 15px);
+    margin-left: auto;
+    margin-top: 100px;
+}
+
+
+@media(min-width: 730px){
+    main > h1{
+        font-size: 80px;
+    }
+    main p,ul{
+        font-size: 18px;
+    }
+    /*                intro                        */
+    .intro-pea{
+        padding: 0 0 100px;
+    }
+    .intro{
+        display: flex;
+        align-items: center;
+        padding: 30px 0;
+        width: 730px;
+        margin: 0 auto;
+    }
+    .intro-first{
+        padding: 30px 30px 0;
+        width: 730px;
+    }
+    .intro-first .big{
+        font-size: 70px;
+    }
+    .intro-first .big::after {
+        white-space: normal;
+    }
+    .intro-first .small{
+        font-size: 40px;
+    }
+    .intro-desc ul{
+        font-size: 18px;
+    }
+    .intro-pic img{
+        margin: 0 auto;
+        width: 300px;
+        padding-right: 10px;
+    }
+    .intro-desc ul{
+        padding: 0 0 0 40px;
+    }
+
+    /*                qualification                      */
+    .qualification{
+        padding: 100px 0;
+    }
+    .qualification-flex{
+        display: flex;
+        padding: 30px 0;
+        width: 730px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .qualification-desc .center > h2{
+        font-size: 80px;
+        font-weight: bold;
+    }
+    .qualification-desc ul{
+        font-size: 18px;
+    }
+    .qualification-pic img{
+        width: 300px;
+        margin: 0 20px;
+    }
+
+    /*                   career                    */
+    .career{
+        width: 730px;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+    .career-title{
+        font-size: 80px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .event ul{
+        margin: 0 auto;
+    }
+    .career-img{
+        max-width: 730px;
+    }
+}
+
+
+@media(min-width: 1300px){
+}

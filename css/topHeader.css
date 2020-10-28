@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+}
+header{
+    width: 100%;
+    position: absolute;
+    background-color: #7eb2f5;
+    height: 80px;
+}
+header.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+.header-pr{
+    display: block;
+    color: rgb(255, 255, 235);
+    margin: auto 0 auto 10px;
+}
+.header-pr a{
+    text-decoration: none;
+    color: rgb(255, 255, 235);
+}
+.header-pr h1{
+    font-size: 35px;
+    padding: 5px 10px 0;
+}
+.header-pr p{
+    font-size: 20px;
+    padding: 0 10px;
+}
+.global-nav{
+    position: fixed;
+    right: -320px;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    padding-top: 40px;
+    transition: all .6s;
+    z-index: 200;
+    overflow-y: auto;
+    background-color: #eee;
+}
+.hamburger{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 300;
+}
+.global-nav-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.global-nav-item{
+    text-align: center;
+    padding: 0 14px;
+}
+.global-nav-item a{
+    display: block;
+    padding: 8px 0;
+    border-bottom: 1px solid #7eb2f5;
+    text-decoration: none;
+    color: #333;
+    line-height: 3;
+    font-size: 25px;
+}
+.global-nav-item a:hover{
+    background-color: #7eb2f5;
+    color: #fff;
+    opacity: 0.8;
+}
+.hamburger-line{
+    position: absolute;
+    left: 13px;
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+    transition: all .6s;
+}
+.hamburger-line1{
+    top: 14px;
+}
+.hamburger-line2{
+    top: 24px;
+}
+.hamburger-line3{
+    top: 34px;
+}
+.hamburger:hover{
+    background-color: #b9d3f5;
+    border-radius: 50%;
+}
+.black-bg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    cursor: pointer;
+}
+.nav-open .global-nav{
+    right: 0;
+}
+.nav-open .black-bg{
+    opacity: .8;
+    visibility: visible;
+}
+.nav-open .hamburger-line1{
+    transform: rotate(45deg);
+    top: 25px;
+}
+.nav-open .hamburger-line2{
+    width: 0;
+    left: 50%;
+}
+.nav-open .hamburger-line3{
+    transform: rotate(-45deg);
+    top: 25px;
+}
+
+@media(min-width: 800px){
+    .global-nav{
+        transition: all .01s;
+    }
+    .hamburger-line{
+        transition: all .01s;
+    }
+    .black-bg{
+        transition: all .01s;
+    }
+}
+
+@media(min-width: 830px){
+    header{
+        background-color: #7eb2f5;
+        height: auto;
+    }
+    header .center{
+        margin: 0 auto;
+        max-width: 1300px;
+    }
+    .header-surr{
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+    }
+    .header-pr{
+        display: block;
+        color: #eee;
+        text-align: start;
+        margin: auto 0 auto 20px;
+    }
+    .header-pr h1{
+        font-size: 29px;
+        padding: 0;
+    }
+    .header-pr p{
+        padding: 0;
+    }
+    .hamburger{
+        visibility: hidden;
+    }
+    .global-nav{
+        position: relative;
+        right: auto;
+        width: 100%;
+        padding-top: 0;
+        z-index: 200;
+        overflow-y: visible;
+        height: 100%;
+        background-color: #7eb2f5;
+    }
+    .global-nav-list{
+        display: flex;
+    }
+    .global-nav-item{
+        padding: 0;
+    }
+    .global-nav-item a{
+        font-size: 24px;
+        position: relative;
+        display: inline-block;
+        line-height: 80px;
+        width: 100px;
+        padding: 0;
+        border: 0;
+        color: #eee;
+    }
+    .global-nav-list a:hover{
+        background-color: #7eb2f5;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    .global-nav-list a::after{
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #eee;
+        transform: scale(0.5, 1);
+        transform-origin: center top;
+        transition: transform .3s;
+    }
+    .global-nav-list a:hover::after{
+        transform: scale(1, 1);
+    }
+    .global-nav{
+        margin-left: auto;
+        margin-right: 10px;
+    }
+}
+@media(min-width: 900px){
+    .header-pr h1{
+        font-size: 38px;
+    }
+    .header-pr p{
+        font-size: 22px;
+    }
+    .global-nav-item a{
+        font-size: 30px;
+    }
+}

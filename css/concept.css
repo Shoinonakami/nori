@@ -1,0 +1,184 @@
+body{
+    background-color: #7eb2f5;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', 'Lato', 'Noto Sans JP', '游ゴシック', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 'Meiryo', 'MS Pゴシック', sans-serif;
+    color: #333;
+    font-size: 16px;
+}
+
+/*                     main                        */
+main > h1{
+    font-size: 60px;
+    text-align: center;
+    color: rgb(255, 255, 235);
+    text-decoration: underline solid rgb(255, 255, 235);
+    position: fixed;
+    top: 125px;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+/*                  concept                        */
+.concept-pea{
+    background-color: rgb(255, 255, 235);
+    margin-top: 200px;
+    z-index: 0;
+}
+.concept{
+    padding: 20px 30px;
+}
+.concept-desc h2{
+    font-size: 23px;
+    text-align: center;
+}
+.concept-desc p{
+    text-decoration: underline solid #7eb2f5;
+    text-align: center;
+    line-height: 1.8;
+}
+.concept-desc ul{
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    line-height: 1.8;
+}
+.concept-desc ul > .title{
+    font-weight: bold;
+}
+.concept-desc ol{
+    list-style: none;
+    padding: 0;
+}
+.concept-desc ol li{
+    position: relative;
+    padding-left: 10px;
+}
+.concept-desc ol li:before {
+    content: "";
+    position: absolute;
+    top: .35em;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #333;
+}
+.concept-alpha{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.concept-alpha ul{
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+}
+.concept-img img{
+    display: block;
+    width: 100%;
+}
+
+
+
+/*                     reason                    */
+.reason-pea{
+    background-color: rgb(255, 255, 235);
+}
+.reason{
+    margin: 200px auto 0;
+    padding: 20px 30px;
+}
+.reason .center{
+    text-align: center;
+}
+.reason .center > h2{
+    font-size: 30px;
+    display: inline-block;
+    border-bottom: 10px double #7eb2f5;
+}
+.reason-desc{
+    margin: 0 auto;
+    line-height: 1.8;
+}
+.reason-desc p{
+    margin: 20px auto;
+}
+.reason-desc span{
+    font-weight: bold;
+    font-size: 18px;
+    color: #7eb2f5;
+}
+.reason-pic img{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+/* .reason-flex:nth-child(even){
+    flex-direction: row-reverse;
+} */
+
+
+
+
+
+@media(min-width: 730px){
+    main > h1{
+        font-size: 80px;
+    }
+    /*                concept                      */
+    .concept{
+        padding: 30px 0 100px;
+        width: 730px;
+        margin: 0 auto;
+    }
+    .concept-desc > h2{
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .concept-desc p{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .concept-desc p br{
+        display: none;
+    }
+    .concept-desc ul{
+        line-height: 1.5;
+        font-size: 18px;
+        padding: 20px 0 0;
+    }
+    .concept-img img{
+        width: 40vw;
+        margin: 0 auto;
+    }
+
+
+    /*                 reason                   */
+    .reason{
+        padding: 100px 0;
+    }
+    .reason-flex{
+        display: flex;
+        padding: 30px 0;
+        width: 730px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .reason .center > h2{
+        font-size: 60px;
+        display: inline-block;
+        border-bottom: 10px double #7eb2f5;
+    }
+    .reason-desc p{
+        line-height: 1.8;
+        font-size: 18px;
+    }
+    .reason-pic img{
+        width: 300px;
+        margin: 0 20px;
+    }
+}
